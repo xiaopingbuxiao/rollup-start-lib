@@ -1,0 +1,44 @@
+{
+  "name": "rollup-start-lib",
+  "version": "0.0.1-beta.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "source": "src/index.ts",
+  "module": "./dist/index.ems.js",
+  "unpkg": "dist/index.js",
+  "dependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "husky": "^7.0.4",
+    "rollup": "^2.60.1",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "conventional-changelog-cli": "^2.1.1",
+    "eslint": "^8.3.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config rollup.config.js -w",
+    "build": "rollup --config rollup.config.js",
+    "changelog": "conventional-changelog -p -i CHANGELOG.md -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaopingbuxiao/rollup-start-lib.git"
+  },
+  "author": "pingjinhuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaopingbuxiao/rollup-start-lib/issues"
+  },
+  "homepage": "https://github.com/xiaopingbuxiao/rollup-start-lib#readme"
+}
